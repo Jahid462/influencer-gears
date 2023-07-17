@@ -166,7 +166,6 @@ li {
 }
 
 .card {
-    border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 20px 10px;
     border-radius: 10px;
@@ -183,7 +182,7 @@ li {
 }
 .card p{
     color: var(--description_color);
-    font-weight: 700;
+    font-weight: 600;
     font-size: .9rem;
 }
 .popular_section .see_more{
@@ -198,7 +197,27 @@ li {
 }
 
 /* ----------Featured Section-------------- */
-
+.featured_section{
+    margin: 7rem 0 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.featured_content h1{
+    color: #0A0826;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.featured_content p{
+    font-weight: 600;
+    font-size: .9rem;
+    color: #6C6C6C;
+    margin: 20px 0;
+}
+.featured_content .btn{
+    font-weight: 700;
+}
 
 /* ----------Footer Section-------------- */
 
