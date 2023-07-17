@@ -238,7 +238,7 @@ li {
     .container{
         width: 80%;
     }
-    .banner_section{
+    .banner_section, .featured_section{
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -253,18 +253,23 @@ li {
     .card{
         width: 96%;
     }
-    .card img{
+    .card img, .featured_section, .featured_section .featured_img img{
         width: 100%;
     }
 
-.navbar{display: none;}
+
 
 }
+
+
+
+
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .container{
         width: 90%;
     }
-    .banner_section{
+    .banner_section, .featured_section{
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -278,7 +283,7 @@ li {
     .card{
         width: 96%;
     }
-    .card img{
+    .card img, .featured_section, .featured_section .featured_img img{
         width: 100%;
     }
 
