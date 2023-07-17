@@ -1,17 +1,90 @@
 /* ---------Default Styles-------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary_color: #3A3A3A;
+    --secondary_color: #18191F;
+    --description_color: #787885;
+    --hover_color: #b23b3b;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1040px;
+    margin: 0 auto;
+}
 *{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* ----------Header Section-------------- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.logo h1{
+    font-size: 1.5rem;
+    color: var(--primary_color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo .logo_two{
+    color: var(--hover_color);
+}
+.logo:hover .logo_one{
+    color: var(--hover_color);
+}
+.logo:hover .logo_two{
+    color: var(--primary_color);
+}
+.menus ul{
+    display: flex;
+    align-items: center;
+}
+.menus ul li{
+    margin-left: 30px;
+}
+.menus ul li:first-child{
+    margin-left: 0;
+}
+.menus ul li a{
+    color: var(--primary_color);
+    font-size: .88rem;
+    font-weight: 600;
+}
+.menus ul li a:hover{
+    color: var(--hover_color);
+}
+.menus ul li a img{
+    width: 85%;
+}
+
+/* ----------Banner Section-------------- */
+
+
+/* ----------Online Shop Mall Section-------------- */
+
+
+/* ----------Popular Section-------------- */
+
+
+/* ----------Featured Section-------------- */
+
+
+/* ----------Footer Section-------------- */
 
 
 
 
 
-
-
-
-
-
-
-
+/* ----------Responsive Section-------------- */
