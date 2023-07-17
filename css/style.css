@@ -126,7 +126,7 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 400px;
+    width: 100%;
 }
 
 /* ----------Online Shop Mall Section-------------- */
@@ -233,3 +233,44 @@ li {
 }
 
 /* ----------Responsive Section-------------- */
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 90%;
+    }
+    .banner_section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .banner_content h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+.navbar{display: none;}
+
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .banner_section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner_content h1{
+        font-size: 1.7rem;
+        
+    }
+
+
+    
+}
+
+
+
+
+
+
+
