@@ -73,7 +73,20 @@ li {
 .logo:hover .logo_two {
     color: var(--primary_color);
 }
-
+.menus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menus .search{
+    margin: 0 20px;
+}
+.menus .cart{
+    width: 30px;
+}
+.menus .cart img{
+    width: 100%;
+}
 .menus ul {
     display: flex;
     align-items: center;
@@ -161,6 +174,7 @@ li {
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 20px 10px;
     border-radius: 10px;
+    width: 300px;
 }
 .card h2{
     color: var(--secondary_color);
@@ -234,9 +248,17 @@ li {
 
 /* ----------Responsive Section-------------- */
 
+/* ----------Small Devices-------------- */
+
 @media screen and (max-width: 576px) {
     .container{
         width: 80%;
+    }
+    .menus ul, .menus .search{
+        display: none;
+    }
+    .logo h1{
+        font-size: 1rem;
     }
     .banner_section, .featured_section{
         flex-direction: column-reverse;
@@ -245,9 +267,6 @@ li {
     .banner_content h1{
         font-size: 1.7rem;
         text-align: center;
-    }
-    .online_shop_section div{
-        width: 60px;
     }
     .online_shop_section{
         display: grid;
@@ -269,13 +288,10 @@ li {
     .card img, .featured_section, .featured_section .featured_img img{
         width: 100%;
     }
-
-
-
 }
 
 
-
+/* ----------Medium Devices-------------- */
 
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -286,30 +302,62 @@ li {
         flex-direction: column-reverse;
         text-align: center;
     }
+    .menus ul, .menus .search{
+        display: none;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
     .banner_content h1{
         font-size: 1.7rem;
-        
     }
     .online_shop_section{
-        flex-wrap: wrap;
-        gap: 20px 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+        row-gap: 20px;
+        padding: 10px;
+        text-align: center;
     }
     .card_container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
     .card{
         width: 96%;
     }
     .card img, .featured_section, .featured_section .featured_img img{
         width: 100%;
-    }
-
-
-    
+    } 
 }
 
+/* ----------Large Devices-------------- */
 
+@media screen and (min-width: 769px) and (max-width: 1039px){
+    .banner_section, .featured_section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .container{
+        width: 90%;
+    }
+    .online_shop_section{
+        column-gap: 10px;
+        padding: 20px 0px;
+    }
+    .card_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card img, .featured_section, .featured_section .featured_img img{
+        width: 100%;
+    }
+    .card_container{
+        gap: 1%;
+    }
+    .card{
+        width: 90%;
+    }
 
+}
 
 
 
